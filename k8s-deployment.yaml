@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pavan-portfolio-deployment
+  labels:
+    app: pavan-portfolio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pavan-portfolio
+  template:
+    metadata:
+      labels:
+        app: pavan-portfolio
+    spec:
+      containers:
+      - name: pavan-portfolio
+        image: pavan-portfolio
+        imagePullPolicy: Never # Use the local image built in Minikube
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pavan-portfolio-service
+spec:
+  type: ClusterIP
+  selector:
+    app: pavan-portfolio
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pavan-portfolio-ingress
+spec:
+  rules:
+  - host: pavan-portfolio.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: pavan-portfolio-service
+            port:
+              number: 80
