@@ -46,7 +46,6 @@ const About = () => {
                   onMouseOver={(e) => e.target.style.filter = 'grayscale(0%)'}
                   onMouseOut={(e) => e.target.style.filter = 'grayscale(20%)'}
                />
-               <div style={{ position: 'absolute', top: '20px', left: '20px', width: '100%', height: '100%', border: '2px solid var(--accent-cyan)', borderRadius: '10px', zIndex: -1 }}></div>
             </div>
           </div>
         </motion.div>
