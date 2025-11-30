@@ -5,12 +5,11 @@ import { Github, Linkedin, Mail, Download } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: '80px' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '40px' }}>
+      <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          style={{ flex: '1 1 500px' }}
         >
           <p className="mono" style={{ color: 'var(--accent-cyan)', marginBottom: '20px' }}>Hi, my name is</p>
           <h1 style={{ fontSize: 'clamp(40px, 8vw, 80px)', fontWeight: 'bold', lineHeight: 1.1, color: 'var(--text-primary)' }}>
@@ -34,32 +33,6 @@ const Hero = () => {
             <a href="https://github.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)' }}><Github className="hover-icon" /></a>
             <a href="https://linkedin.com/in/pavan-kumar-sahu-a1ba74184" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)' }}><Linkedin className="hover-icon" /></a>
             <a href="mailto:pavansahu.power@gmail.com" style={{ color: 'var(--text-secondary)' }}><Mail className="hover-icon" /></a>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          style={{ flex: '0 0 auto' }}
-        >
-          <div style={{
-            width: '280px',
-            height: '280px',
-            borderRadius: '50%',
-            border: '4px solid var(--accent-cyan)',
-            overflow: 'hidden',
-            boxShadow: '0 0 30px rgba(100, 255, 218, 0.3)'
-          }}>
-            <img
-              src="/profile.jpg"
-              alt="Pavan Kumar Sahu"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover'
-              }}
-            />
           </div>
         </motion.div>
       </div>
