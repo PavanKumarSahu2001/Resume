@@ -8,6 +8,7 @@ import Certifications from './components/Certifications';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import StreakTracker from './components/StreakTracker';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -33,6 +34,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <StreakTracker />
     </div>
   );
 }
