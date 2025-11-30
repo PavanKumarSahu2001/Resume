@@ -4,10 +4,10 @@ import { Award, ExternalLink } from 'lucide-react';
 
 const certifications = [
   {
-    title: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
+    title: "Google Gen AI Leader",
+    issuer: "Google",
     credlyUrl: "https://www.credly.com/badges/6e9511ba-fad1-45be-95e9-ddea885ffab2/linked_in_profile",
-    badgeColor: "#FF9900"
+    badgeColor: "#4285F4"
   },
   {
     title: "GitHub Copilot",
