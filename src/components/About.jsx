@@ -31,10 +31,21 @@ const About = () => {
           
           <div style={{ position: 'relative' }}>
             <div className="img-wrapper" style={{ position: 'relative', borderRadius: '4px', overflow: 'hidden' }}>
-               {/* Placeholder for Headshot - Replace src with actual image */}
-               <div style={{ width: '100%', height: '300px', background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid var(--accent-cyan)', borderRadius: '10px' }}>
-                  <span className="mono" style={{color: 'var(--accent-cyan)'}}>Pavan.jpg</span>
-               </div>
+               <img 
+                  src={import.meta.env.BASE_URL + 'pavan.jpg'} 
+                  alt="Pavan Kumar Sahu" 
+                  style={{ 
+                    width: '100%', 
+                    height: '300px', 
+                    objectFit: 'cover',
+                    border: '2px solid var(--accent-cyan)', 
+                    borderRadius: '10px',
+                    filter: 'grayscale(20%)',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseOver={(e) => e.target.style.filter = 'grayscale(0%)'}
+                  onMouseOut={(e) => e.target.style.filter = 'grayscale(20%)'}
+               />
                <div style={{ position: 'absolute', top: '20px', left: '20px', width: '100%', height: '100%', border: '2px solid var(--accent-cyan)', borderRadius: '10px', zIndex: -1 }}></div>
             </div>
           </div>
