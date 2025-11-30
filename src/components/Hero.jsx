@@ -24,7 +24,12 @@ const Hero = () => {
 
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
             <a href="#projects" className="btn btn-primary">Check out my work</a>
-            <a href="/resume.pdf" className="btn btn-solid" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <a 
+              href="/resume.pdf" 
+              download="Pavan_Kumar_Sahu_Resume.pdf"
+              className="btn btn-solid" 
+              style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+            >
               <Download size={18} /> Resume
             </a>
           </div>

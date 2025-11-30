@@ -28,7 +28,7 @@ const Projects = () => {
     <section id="projects" className="section-padding">
       <div className="container">
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '40px', fontSize: '2rem' }}>
-          <span style={{ color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)', fontSize: '1.5rem' }}>04.</span> 
+          <span style={{ color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)', fontSize: '1.5rem' }}>05.</span> 
           Featured Projects
         </h2>
 
