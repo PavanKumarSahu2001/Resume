@@ -29,19 +29,21 @@ const About = () => {
             </div>
           </div>
           
-          <div style={{ position: 'relative' }}>
-            <div className="img-wrapper" style={{ position: 'relative', borderRadius: '4px', overflow: 'hidden' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className="img-wrapper" style={{ borderRadius: '10px', overflow: 'hidden', display: 'inline-block' }}>
                <img 
                   src={import.meta.env.BASE_URL + 'pavan.jpg'} 
                   alt="Pavan Kumar Sahu" 
                   style={{ 
-                    width: '100%', 
-                    height: '300px', 
+                    width: '280px', 
+                    height: '320px', 
                     objectFit: 'cover',
+                    objectPosition: 'center top',
                     border: '2px solid var(--accent-cyan)', 
                     borderRadius: '10px',
                     filter: 'grayscale(20%)',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s ease',
+                    display: 'block'
                   }}
                   onMouseOver={(e) => e.target.style.filter = 'grayscale(0%)'}
                   onMouseOut={(e) => e.target.style.filter = 'grayscale(20%)'}
