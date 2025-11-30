@@ -10,10 +10,10 @@ const certifications = [
     badgeColor: "#FF9900"
   },
   {
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
+    title: "GitHub Copilot",
+    issuer: "GitHub",
     credlyUrl: "https://www.credly.com/badges/f6b41a0b-72f0-46b5-8617-c977ae124f61",
-    badgeColor: "#FF9900"
+    badgeColor: "#238636"
   },
   {
     title: "AWS Certified Developer – Associate",
