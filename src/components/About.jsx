@@ -31,11 +31,10 @@ const About = () => {
           
           <div style={{ position: 'relative' }}>
             <div className="img-wrapper" style={{ position: 'relative', borderRadius: '4px', overflow: 'hidden' }}>
-               <img 
-                 src={import.meta.env.BASE_URL + 'profile.jpg'}
-                 alt="Pavan Kumar Sahu"
-                 style={{ width: '100%', height: '300px', objectFit: 'cover', border: '2px solid var(--accent-cyan)', borderRadius: '10px' }}
-               />
+               {/* Placeholder for Headshot - Replace src with actual image */}
+               <div style={{ width: '100%', height: '300px', background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid var(--accent-cyan)', borderRadius: '10px' }}>
+                  <span className="mono" style={{color: 'var(--accent-cyan)'}}>Pavan.jpg</span>
+               </div>
                <div style={{ position: 'absolute', top: '20px', left: '20px', width: '100%', height: '100%', border: '2px solid var(--accent-cyan)', borderRadius: '10px', zIndex: -1 }}></div>
             </div>
           </div>
